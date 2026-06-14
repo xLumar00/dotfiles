@@ -1,0 +1,25 @@
+[manager]
+ratio          = [ 1, 3, 4 ]
+sort_by        = "alphabetical"
+show_hidden    = true
+
+[opener]
+edit = [
+	{ run = 'gnome-text-editor "$@"', block = true, desc = "Editor" },
+]
+
+[open]
+rules = [
+	{ name = "*.txt", use = "edit" },
+	{ mime = "text/*", use = "edit" },
+]
+
+# TOTO SÚ TIE FARBY DEFINOVANÉ PRIAMO:
+[style]
+hovered         = { fg = "#1A1616", bg = "#FF8C5A", bold = true }
+selection       = { fg = "#1A1616", bg = "#A0E9FF", bold = true }
+border_symbol   = "│"
+border_style    = { fg = "#A0E9FF" }
+
+[theme]
+use = "theme"

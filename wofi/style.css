@@ -1,0 +1,51 @@
+window {
+    margin: 0px;
+    border: 3px dashed #800000; /* Hrubšia tmavočervená prerušovaná čiara */
+    background-color: rgba(10, 2, 2, 0.95); /* Takmer čierna s jemnou priehľadnosťou */
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    color: #ff4545;
+}
+
+#input {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ff4545;
+    color: #ffffff; /* Béžová pre text, ktorý píšeš (lepšie čitateľné) */
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+#inner-box {
+    margin: 10px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 10px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#text {
+    margin: 5px;
+}
+
+/* Štýl pre vybratú položku */
+#selected {
+    background-color: #4d0000; /* Tmavé "krvavé" pozadie */
+    border-left: 5px solid #ff4545; /* Hrubý indikátor naľavo */
+}
+
+#text:selected {
+    color: #ffffff; /* Béžový text pri vybratí */
+    font-weight: bold;
+}
+
+/* Toto odstráni škaredý defaultný scrollbar */
+#scroll {
+    border: none;
+}

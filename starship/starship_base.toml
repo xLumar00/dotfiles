@@ -1,0 +1,26 @@
+# Použi vygenerovanú paletu
+add_newline = false
+palette = "my_palette"
+
+# Formát promptu (Ostrý industriálny štýl)
+format = """
+[ ](bg:color1)\
+[SYLWAN❯ ](fg:color7 bg:color1)\
+$directory\
+[](fg:color1 bg:color8)\
+$git_branch\
+$git_status\
+[](fg:color8 bg:color1)\
+[](fg:color1)\
+$character"""
+
+[directory]
+style = "fg:color15 bg:color1" # color15 je tvoja biela, color1 je tvoj akcent
+format = "[$path ]($style)"
+truncation_length = 3
+
+[character]
+success_symbol = "[ ❯](bold color9)"
+error_symbol = "[ ✖](bold color9)"
+
+# SCRIPT IMPORT COLORS HERE:

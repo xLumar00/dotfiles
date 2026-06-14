@@ -1,0 +1,44 @@
+@import "colors.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 800;
+    /*text-transform: uppercase;  Všetko veľkým ako v NERV termináli */
+}
+
+window#waybar {
+    background-color: @semi_transparent;
+    border-bottom: 2px solid @color11;
+    color: @color9;
+}
+
+/* Moduly - tu pridávame tie medzery */
+#cpu, #memory, #battery, #clock, #pulseaudio, #network, #tray {
+    margin: 0 6px;      /* Medzera zvonku medzi modulmi */
+    padding: 0 12px;    /* Medzera vo vnútri modulu (text od okraja) */
+    background-color: @color10; /* Veľmi tmavo červená pre efekt hĺbky */
+    border-left: 1px solid @color11; /* Deliaca čiara naľavo */
+}
+
+#clock {
+    color: @color15; /* Béžová zo screenshotu */
+    border-left: none;
+    background-color: @color1;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @color1;
+}
+
+#workspaces button.active {
+    color: @color9;
+    border-bottom: 2px solid @color9;
+}
+
+#tray {
+    border-left: 1px solid @color9;
+    margin-right: 10px;
+}

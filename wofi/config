@@ -1,0 +1,12 @@
+width=800
+height=300
+location=center
+show=drun
+prompt=MAGI_SYSTEM_QUERY:
+filter_rate=100
+allow_images=true
+# Toto zabezpečí, že sa wofi zavrie, keď stratí focus
+always_parse_args=true
+show_all=false
+print_command=true
+layer=overlay

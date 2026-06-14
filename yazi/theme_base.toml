@@ -1,0 +1,34 @@
+[icon]
+prepend_rules = [
+  { name = "*/", fg = "color1" },  # Priečinky budú tvoja červená
+  { name = "*.log", fg = "color1" },
+  { name = "*", fg = "color7" }    # Ostatné bledošedé
+]
+
+[manager]
+hovered         = { fg = "color8", bg = "color3", bold = true }
+preview_hovered = { fg = "color8", bg = "color3", bold = true }
+
+
+# Čiary (Cyan)
+border_symbol   = "│"
+border_style    = { fg = "color11" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "color1", bg = "color13" }
+
+# Režimy (Dole v lište)
+mode_normal = { fg = "color8", bg = "color5", bold = true }
+mode_select = { fg = "color8", bg = "color4", bold = true }
+mode_unset  = { fg = "color8", bg = "color2", bold = true }
+
+[which]
+cols = 3
+mask = { bg = "color8" }
+#cand = { fg = "color9" }
+rest = { fg = "color7" }
+#desc = { fg = "color1" }
+
+#SCRIPT IMPORTED COLORS
